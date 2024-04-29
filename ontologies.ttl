@@ -24,21 +24,21 @@
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
           rdfs:domain :Section ;
-          rdfs:range :Chunk1 .
+          rdfs:range :Chunk .
 
 ###  http://goingmeta.live/onto/gm24/legislation/INCLUDES
+# :RELATED_TO rdf:type owl:ObjectProperty ;
+#           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
+#                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
+
+#           rdfs:domain :Bill_Tag ;
+#           rdfs:range :Section .
 :RELATED_TO rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
 
-          rdfs:domain :Bill_Tag ;
-          rdfs:range :Section .
-:RELATED_TO rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
-                             <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
-
-          rdfs:domain :Bill_Tag ;
-          rdfs:range :Bill .
+          rdfs:domain :Bill ;
+          rdfs:range :Bill_Tag .
 
 #################################################################
 #    Classes
@@ -46,7 +46,7 @@
 
 ###  http://goingmeta.live/onto/gm24/legislation/Clause
 :Bill rdf:type owl:Class .
-:Chunk1 rdf:type owl:Class .
+:Chunk rdf:type owl:Class .
 
 ###  http://goingmeta.live/onto/gm24/legislation/Definition
 :Section rdf:type owl:Class .
