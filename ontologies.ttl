@@ -17,11 +17,8 @@
 :CONTAINS rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
-       
-          rdfs:domain :Bill,:Bill_version, :Section,:Votes ; 
-          rdfs:range :Bill_version, :Section :Chunk,:Votes,:Motion .
-
-
+          rdfs:domain :Bill, :Bill_version, :Section, :Votes ; 
+          rdfs:range :Bill_version, :Section, :Chunk, :Votes, :Motion .
 ###  http://goingmeta.live/onto/gm24/legislation/INCLUDES
 # :RELATED_TO rdf:type owl:ObjectProperty ;
 #           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
