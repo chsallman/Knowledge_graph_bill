@@ -14,21 +14,18 @@
 #################################################################
 
 ###  http://goingmeta.live/onto/gm24/legislation/CONTAINS
-:CONTAINS rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
-                             <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
-          rdfs:domain :Bill, :Bill_version, :Section, :Votes ; 
-          rdfs:range :Bill_version, :Section, :Chunk, :Votes, :Motion .
+# :CONTAINS rdf:type owl:ObjectProperty ;
+#           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
+#                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
+#           rdfs:domain :Bill, :Bill_version, :Section, :Votes ; 
+#           rdfs:range :Bill_version, :Section, :Chunk, :Votes, :Motion .
 
-:RELATED_TO rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
-                             <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
+# :RELATED_TO rdf:type owl:ObjectProperty ;
+#           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
+#                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
 
-          rdfs:domain :Bill_version ;
-          rdfs:range :Bill_Tag .
-
-
-
+#           rdfs:domain :Bill_version ;
+#           rdfs:range :Bill_Tag .
 :HAS_CHUNK rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
@@ -74,10 +71,8 @@
 :Bill_version rdf:type owl:Class .
 :Section rdf:type owl:Class .
 :Chunk rdf:type owl:Class .
-
 ###  http://goingmeta.live/onto/gm24/legislation/Definition
 :Bill_Tag rdf:type owl:Class .
-
 :Votes rdf:type owl:Class .
 :Motion rdf:type owl:Class .
 :Motion_detail rdf:type owl:Class .
