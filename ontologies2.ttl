@@ -32,30 +32,35 @@
 
           rdfs:domain :Section ;
           rdfs:range :Chunk .
+
 :HAS_SECTION rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
 
           rdfs:domain :Bill_version ;
           rdfs:range :Section .
+
 :RELATED_INDUSTRY rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
 
           rdfs:domain :Bill_Tag ;
           rdfs:range :Bill_version .
+
 :HAS_VERSION rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
 
           rdfs:domain :Bill ;
           rdfs:range :Bill_version .
+
 :HAS_DETAILS rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
 
           rdfs:domain :Motion ;
           rdfs:range :Motion_detail .
+
 :HAS_DETAILS rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
