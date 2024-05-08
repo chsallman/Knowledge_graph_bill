@@ -26,6 +26,11 @@
 
 #           rdfs:domain :Bill_version ;
 #           rdfs:range :Bill_Tag .
+:CONTAINS rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
+                             <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
+          rdfs:domain :Bill ; 
+          rdfs:range :Votes .
 :HAS_CHUNK rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://www.nsmntx.org/2024/01/rag#furtherDetailRelationship> ,
                              <http://www.nsmntx.org/2024/01/rag#inverseContextualisingRelationship> ;
